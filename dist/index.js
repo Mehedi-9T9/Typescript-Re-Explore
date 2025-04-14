@@ -16,3 +16,14 @@ const nullValue = null;
 const fruits = ["apple", "banana", "orang"];
 //tuple
 const nameAge = ["Mithu", 25];
+//Object-
+const person = {
+    firstName: "Rifat",
+    lastName: 'Hosen',
+    company: "2B Fashion"
+};
+//access Modifire
+const user = {
+    distric: "naogaon",
+    name: "ABC"
+};

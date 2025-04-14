@@ -24,3 +24,25 @@ const fruits:string[] =["apple","banana","orang"]
 
 //tuple
 const nameAge:[string,number] =["Mithu",25]
+
+//Object-
+const person: {
+  firstName:string;
+  middleName ?:string  //optional type
+  lastName:string;
+  company:string
+} ={
+  firstName:"Rifat",
+  lastName:'Hosen',
+  company:"2B Fashion"
+}
+
+
+//access Modifire
+const user:{
+ readonly distric:"naogaon";
+  name:"ABC"
+}={
+  distric:"naogaon",
+  name:"ABC"
+}
