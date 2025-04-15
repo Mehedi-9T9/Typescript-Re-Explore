@@ -46,3 +46,25 @@ const user:{
   distric:"naogaon",
   name:"ABC"
 }
+
+//Function 
+function add (num1:number,num2:number=10):number {
+  return num1+num2
+
+}
+add(10,10)
+// methods
+const banker ={
+  name:"Mehedi",
+  balance:10,
+  addBalance (balance:number):number{
+    return this.balance+balance
+  }
+}
+const balance =banker.addBalance(10)
+console.log(balance);
+
+//map fuction 
+const numbers:number[] =[2,3,4]
+const newNumbers:number[] =numbers.map((num:number):number=>num*num)
+console.log(newNumbers);
