@@ -68,3 +68,41 @@ console.log(balance);
 const numbers:number[] =[2,3,4]
 const newNumbers:number[] =numbers.map((num:number):number=>num*num)
 console.log(newNumbers);
+
+//spreat oparetor 
+const classNine =["Hapsha","Sweety","Merina"]
+const science =["Riva","Shahara"]
+
+const classNineList:string[] =[...classNine,...science]
+console.log(classNineList);
+
+const address1 ={
+  vill:"ParanPur",
+  post:"Fetgram"
+}
+const address2={
+  distric:"naogaon",
+  division:"Rajshahi"
+}
+const address3 ={
+  country:"Bangladesh",
+  language:"bengali"
+}
+const totalInfo ={
+  ...address1,
+  ...address2,
+  ...address3
+}
+console.log(totalInfo);
+
+//Rest oparetor 
+const greeting=(...friends:string[]) =>{
+friends.forEach(friend => {
+
+console.log(`Hello ${friend}`);
+  
+ });
+ return friends
+
+}
+console.log(greeting("Mehedi","Nasim"));
