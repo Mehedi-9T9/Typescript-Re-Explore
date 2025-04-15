@@ -73,3 +73,14 @@ const greeting = (...friends) => {
     return friends;
 };
 console.log(greeting("Mehedi", "Nasim"));
+//destructuring
+const users = {
+    name: "Mehedi",
+    age: 23,
+    profesion: "student"
+};
+const { age, profesion } = users;
+console.log(age, profesion);
+const colors = ["red", "green", "blue"];
+const [sobuj, ,] = colors;
+console.log(sobuj);
