@@ -84,3 +84,7 @@ console.log(age, profesion);
 const colors = ["red", "green", "blue"];
 const [sobuj, ,] = colors;
 console.log(sobuj);
+const newUser = {
+    name: "Mehedi",
+    age: 25
+};

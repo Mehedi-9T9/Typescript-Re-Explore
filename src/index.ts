@@ -120,3 +120,13 @@ console.log(age,profesion);
 const colors =["red","green","blue"]
 const [sobuj,,]=colors
 console.log(sobuj);
+
+//Type alias
+type userDemo ={
+  name:string,
+  age:number
+}
+const newUser:userDemo ={
+  name:"Mehedi",
+  age:25
+}
