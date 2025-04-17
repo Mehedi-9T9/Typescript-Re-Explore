@@ -28,3 +28,19 @@ const students = [
     }
 ];
 const player = [11, { name: "Neymar JR", age: 28 }];
+//Generic Function
+const createArray = (text, num) => {
+    return [text, num];
+};
+createArray(22, 33);
+//Generic Function Tuple
+const createTupleArr = (val1, val2) => {
+    return [val1, val2];
+};
+createTupleArr(12, "Mehedi");
+//how to added a valiable in any user
+const setCoures = (student) => {
+    const course = "Developer";
+    return Object.assign(Object.assign({}, student), { course });
+};
+console.log(setCoures({ name: "Mehedi", age: 23 }));

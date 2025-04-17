@@ -51,3 +51,29 @@ const students:GenericArray<StudentType>=[
 //Generic Tuple
 type GenericTuple<X, Y>= [X,Y]
 const player:GenericTuple<number,{name:string,age:number}> =[11,{name:"Neymar JR",age:28}]
+
+
+//Generic Function
+const createArray =<T>(text:T,num:T) =>{
+    return [text,num]
+}
+createArray<number>(22,33)
+
+//Generic Function Tuple
+const createTupleArr =<T,Q>(val1:T ,val2:Q)=>{
+    return [val1,val2]
+}
+createTupleArr<number,string>(12,"Mehedi")
+
+
+
+
+//how to added a valiable in any user
+const setCoures =<T>(student:T)=>{
+    const course ="Developer"
+    return{
+        ...student,
+        course
+    }
+}
+console.log(setCoures<{name:string,age:number}>({name:"Mehedi",age:23}));
