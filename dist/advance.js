@@ -44,3 +44,9 @@ const setCoures = (student) => {
     return Object.assign(Object.assign({}, student), { course });
 };
 console.log(setCoures({ name: "Mehedi", age: 23 }));
+//constains = extends Explore
+const createDeveloper = (student) => {
+    const course = "Frontend Developer";
+    return Object.assign(Object.assign({}, student), { course });
+};
+createDeveloper({ name: "Mehedi", age: 23, id: 33 });

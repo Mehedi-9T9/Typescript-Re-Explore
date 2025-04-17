@@ -77,3 +77,14 @@ const setCoures =<T>(student:T)=>{
     }
 }
 console.log(setCoures<{name:string,age:number}>({name:"Mehedi",age:23}));
+
+//constains = extends Explore
+const createDeveloper =<T extends {name:string,id:number,age:number}>(student:T)=>{
+    const course ="Frontend Developer"
+    return{
+        ...student,
+        course
+    }
+
+}
+createDeveloper({name:"Mehedi",age:23,id:33})
